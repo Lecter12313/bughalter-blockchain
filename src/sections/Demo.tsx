@@ -3,6 +3,7 @@
 export function Demo() {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
+  const githubUrl = import.meta.env.VITE_GITHUB_URL || 'https://github.com/Lecter12313/bughalter-blockchain';
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -76,9 +77,14 @@ export function Demo() {
               ))}
             </div>
 
-            <button className="w-full py-3 border border-white/20 text-white/60 font-mono text-xs uppercase tracking-widest hover:border-[#FFD700] hover:text-[#FFD700] transition-colors">
+            <a
+              href={githubUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="block w-full py-3 border border-white/20 text-white/60 text-center font-mono text-xs uppercase tracking-widest hover:border-[#FFD700] hover:text-[#FFD700] transition-colors"
+            >
               Переглянути код →
-            </button>
+            </a>
           </div>
 
           <div
