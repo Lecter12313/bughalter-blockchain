@@ -1,0 +1,7 @@
+﻿node_modules/
+dist/
+.vscode/
+*.log
+.devserver.log
+.devserver.err.log
+.DS_Store
