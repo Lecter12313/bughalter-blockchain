@@ -1,35 +1,52 @@
 ﻿# Непідкупний бухгалтер
 
-Лендинг-проєкт на React + Vite про автоматичний розподіл роялті через смарт-контракт.
+[![Deploy to GitHub Pages](https://github.com/Lecter12313/bughalter-blockchain/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/Lecter12313/bughalter-blockchain/actions/workflows/deploy-pages.yml)
+![Status](https://img.shields.io/badge/status-active%20development-22c55e)
+![Stack](https://img.shields.io/badge/stack-React%20%2B%20Vite-0ea5e9)
 
-## Локальний запуск
+Лендинг-проєкт про автоматичний розподіл роялті через смарт-контракт.
 
+## Live
+- GitHub Pages: `https://lecter12313.github.io/bughalter-blockchain/`
+- Repository: `https://github.com/Lecter12313/bughalter-blockchain`
+
+## Current focus
+- Visual polish and motion quality
+- Better UX copy and readability
+- Stable CI/CD deployment to GitHub Pages
+
+## Tech stack
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+
+## Local development
 ```bash
 npm install
 npm run dev
 ```
+Open: `http://localhost:5173/`
 
-Відкрити: `http://localhost:5173/`
-
-## Змінні середовища
-
-Створи `.env` (можна скопіювати з `.env.example`):
-
+## Build
 ```bash
-VITE_GITHUB_URL=https://github.com/<your-username>/<your-repo>
+npm run build
 ```
 
-Це посилання використовується в футері сайту.
+## Environment
+Create `.env` from `.env.example`:
+```bash
+VITE_GITHUB_URL=https://github.com/Lecter12313/bughalter-blockchain
+```
 
-## Деплой на GitHub Pages
+## Repository workflow
+- Issues: bug and feature templates configured
+- Pull requests: template configured
+- CI: deploy workflow in `.github/workflows/deploy-pages.yml`
+- Docs: `CONTRIBUTING.md`, `ROADMAP.md`, `CHANGELOG.md`
 
-У репозиторії вже є workflow: `.github/workflows/deploy-pages.yml`.
+## Roadmap
+See `ROADMAP.md`.
 
-Що треба зробити на GitHub:
-1. Створити порожній репозиторій.
-2. Запушити цей проєкт у гілку `main`.
-3. В репозиторії відкрити `Settings -> Pages` і переконатися, що Source = `GitHub Actions`.
-4. Дочекатися завершення workflow `Deploy to GitHub Pages`.
-
-Після цього сайт буде доступний за адресою:
-`https://<your-username>.github.io/<your-repo>/`
+## Changelog
+See `CHANGELOG.md`.
